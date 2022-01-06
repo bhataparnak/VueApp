@@ -1,5 +1,9 @@
-
 <html>
+
+<head>
+  <title>Insubuy coding challenge</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
 
 <body>
 <div class="header">
@@ -7,6 +11,9 @@
 </div>
 
 <div class="rules">
+  <p id="link">
+    <a href="/api">Click here to view API</a>
+  </p>
   <ul>
     <li>
       <a href="#basicRequirements">
@@ -44,7 +51,7 @@
   <p>
     You will be asked to build a site which have the
     functionality described below. The application server should be running at
-    <a href="http://localhost:8080">http://localhost:8080</a> - if not, run 'npm start'.
+    <a href="http://localhost:8080">http://localhost:8080</a> - if it is not, please run 'npm start'.
   </p>
   <p>
     You can visit
@@ -74,7 +81,6 @@
   <h3>Please branch out from the master branch like this {firstName-LastName}. Make sure you make frequent meaningful commits on your branch.
   Once you are ready to submit the code please send us a link to your github branch by replying to the email. You can reach out to us on the email if you
   have any questions about the challenge.</h3>
-  <h3>Scaffolding The Project</h3>
   <p>
     The front end implementation of this project has two options. The first is using the existing structure and integrating your front end with it
     as you would in a single application. To do this, you would need to create a build with Webpack and create the basic structure on your own which would proxy the back end from either a proxy in the package.json or webpack dev server. The second option is to create a completely separate application which references the provided API as third party API. For example, you could use Create React App or Vue CLI to create the project in the client folder provided. Use http://localhost:8080/ in your AJAX requests to the server. This would require two terminals. One for your front end project and one for the back end project provided.
@@ -95,7 +101,12 @@
   <li>Use of any CSS framework is not allowed.</li>
   <li>You may use SCSS if you are comfortable with preprocessors.</li>
   </p>
-  
+  <p>
+    Please find the mockups here
+  <li><a href="../images/MockUpDesktop.png" target="_blank"> Desktop </a></li>
+  <li><a href="../images/Mobile.png" target="_blank"> Mobile </a></li>
+  </p>
+
   <p>
     The form should contain the following fields and validate against the rules for each. The validations should be shown below the corresponding field.
   </p>

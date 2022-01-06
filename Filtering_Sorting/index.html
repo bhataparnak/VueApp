@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>product Listing</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div class="container" id="listing">
+	<div class="filter">
+		<div>
+			<label><input type="radio" v-model="selectedCategory" value="All" /> All</label>
+	    </div>
+		<label><input type="radio" v-model="selectedCategory" value="Comprehensive" /> Comprehensive</label>
+		<label><input type="radio" v-model="selectedCategory" value="Fixed" /> Fixed</label>
+		<!-- <label><input type="radio" v-model="selectedCategory" value="bestSellers" /> Bestseller</label>
+		<label><input type="radio" v-model="selectedCategory" value="type" /> Type</label>
+		<label><input type="radio" v-model="selectedCategory" value="section" /> Section</label> -->
+	</div>
+	
+	<ul class="people-list">
+		<li v-for="product in filteredproducts">{{ product.name }}</li>
+	</ul>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
